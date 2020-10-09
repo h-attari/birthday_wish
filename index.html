@@ -71,14 +71,14 @@
             font-size: 18px;
             text-shadow: 1px 1px black;
         }
-        #from
+        #from, #to
         {
             font-size: 16px;
             color: khaki;
             text-decoration: underline;
             font-family: cursive;
         }
-        #name
+        #name, #toname
         {
             font-size: 30px;
             color: gold;
@@ -105,7 +105,7 @@
                         </div>
                         <div class="form-group mt-3 form-row">
                             <div class="col-3 col-md-2 offset-5 offset-md-7 mt-2">
-                                <a type="button" class="ml-auto" id="hint" data-toggle="tooltip" data-html="true" title="lagao dimaag aur socho wo <strong><i>Naam</i></strong><br>bulate hai jisse hum aapko subah-shaam" data-placement="bottom"><span class="fa fa-info-circle"></span> <i>Hint</i></a>
+                                <a type="button" class="ml-auto" id="hint" data-toggle="tooltip" data-html="true" title="Bola tha ki yaad rakhna is <strong>Naam</strong> ko,<br>diya tha jo bade <strong>Pyaar</strong> se hamne aapko." data-placement="bottom"><span class="fa fa-info-circle"></span> <i>Hint</i></a>
                             </div>
                             <div class="col-4 col-md-3">
                                 <button type="button" class="btn btn-secondary mr-auto" id="submit">Submit</button>
@@ -147,7 +147,10 @@
         </div>
         <div class="row mt-20 d-none" id="cite" style="padding-bottom: 20px;">
             <div class="col-5 offset-7" style="padding-top: 30px;">
-                <span id="from">From:</span>
+                <span id="to">To:</span>
+                <br>
+                <span id="toname">The most lovable girl.</span>
+		<span id="from">From:</span>
                 <br>
                 <span id="name">H.Attari</span>
             </div>
@@ -179,7 +182,7 @@
             });
             $("#submit").click(function(){
                 var a=document.getElementById("psswd").value;
-                if(a == "bhootni" || a == "Bhootni" || a == "BHOOTNI" || a == '1')
+                if(a == "saksy" || a == "Saksy" || a == "SAKSY")
                 {
                     $(".container").addClass('bg');
                     $("#entermodal").modal('hide');
