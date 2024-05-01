@@ -11,35 +11,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <style type="text/css">
-    	body
-    	{
-    		background-color: #010102;
-    	}
+        body
+        {
+            background-color: #010102;
+        }
         .bg
         {
-    		background-image: url(happy-birthday-card-background-with-black-air-balloons-golden-3d-stars-confetti_134545-42.jpg);
-    		background-repeat: no-repeat;
-    		background-size: cover;
-    		background-position-x: center;
+            background-image: url(happy-birthday-card-background-with-black-air-balloons-golden-3d-stars-confetti_134545-42.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
         }
-    	.container
-    	{
-    		min-width: 100%;
+        .container
+        {
+            min-width: 100%;
             border: 0px;
-    	}
-    	.hrow
-    	{
-    		min-height: 700px;
-    	}
+        }
+        .hrow
+        {
+            min-height: 700px;
+        }
         img
         {
             width: 100%;
         }
-    	#content
-    	{
+        #content
+        {
             font-style: italic;
             color: floralwhite
-    	}
+        }
         #content a:hover
         {
             box-shadow: 3px 3px #b8b8b8;
@@ -129,20 +129,20 @@
 		</div>
         <div class="row d-none" id="boxrow">
             <div class="col-6 offset-3" type="button" id="box">
-                <img src="gift-removebg-preview.png">
+                <img src="../media/gift-removebg-preview.png">
                 <p style="color: white;">Click on the <i>Gift</i> to unwrap.</p>
             </div>
         </div>
         <div class="row d-none" id="video">
             <div class="col-12">
                 <video style="width: 100%; margin-top: 40px;">
-                    <source src="final_5edbf9d7a62825001535a05a_851301.mp4" type="video/mp4">
+                    <source src="../media/final_5edbf9d7a62825001535a05a_851301.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
         <div class="row mt-20 d-none" id="wish">
             <div class="col-10 offset-1">
-                <img src="pngtree-happy-birthday-background-for-black-gold-minimalist-party-image_1385-removebg-preview.png">
+                <img src="../media/pngtree-happy-birthday-background-for-black-gold-minimalist-party-image_1385-removebg-preview.png">
             </div>
         </div>
         <div class="row mt-20 d-none" id="cite" style="padding-bottom: 20px;">
@@ -153,8 +153,8 @@
             </div>
 		<div class="col-5 offset-7" style="padding-top: 30px;">
 			<span id="from">From:</span>
-                	<br>
-                	<span id="name">H.Attari</span>
+                <br>
+            <span id="name">H.Attari</span>
 		</div>
         </div>
 	</div>
@@ -205,7 +205,7 @@
             });
             $("#box").click(function(){
                 $(this).children('p').addClass('d-none');
-                $(this).children('img').attr('src','istockphoto-89486325-612x612-removebg-preview.png');
+                $(this).children('img').attr('src','../media/istockphoto-89486325-612x612-removebg-preview.png');
                 setTimeout(function(){
                     $("#video").fadeIn(2000).removeClass('d-none');
                     $(window).scrollTop($('video').offset().top);
